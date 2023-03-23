@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svg tag</title>
+<style>
+     *{
+        margin: 0;
+        padding: 0;
+
+        box-sizing: border-box;
+     }
+     body{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          background-color: rgb(0, 0, 0);
+
+     }
+     .circle1{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 200px;
+          width: 200px;
+          border-radius: 50%;
+          border: 3px solid rgb(44, 44, 25);
+          border-top: 3px solid red;
+          animation: ani 3s linear
+          infinite
+          ;
+          
+  }
+  .circle2{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px solid rgb(84, 42, 2);
+    border-top: 3px solid rgb(255, 204, 159) ;
+    animation: ani 2s linear
+    infinite;
+
+  }
+
+  @keyframes ani {
+    0%{
+        transform: rotate(0deg);
+    }
+   100%{
+    transform: rotate(360deg);
+   }
+
+  }
+#cir{
+    color: azure;
+    border: 5px;
+    background-attachment: white;
+}
+
+
+
+
+</style>
+
+
+</head>
+
+<body>
+    <svg id="cir">
+        <circle cx="50" cy="50" r="40"/>
+        <br>
+        <dir class="container">
+            <div class="circle1">
+                <div class="circle2"></div>
+            </div>
+        </dir>
+        
+     </svg>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+</body>
+</html>

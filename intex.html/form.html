@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form tags</title>
+    <style>
+     html{
+      
+      background: url("/project\ img/camera2.jpeg");
+      flex-wrap: wrap;
+
+     }
+     .reg{
+      background-color: rgba(0 ,0,0,0.4);
+     color: #ffffff;
+    padding: 20px 20px  20px;
+    font-size:larger;
+   text-align: justify;
+    align-content: center;
+    width: 500px;
+
+     }
+ 
+  
+
+    </style>
+
+    
+</head>
+<body>
+
+     <!-- name="" atribude used on server site ,to help saparate the user datas-->  
+     <!--action="" its backend connecting attributs -->
+     <!-- method="" 2 types of methods get&post method ,post method was secured-->
+
+    <form action="#" method="get" class="reg">
+        First name; <input type="text" name="first name"/><br><br>
+   
+          Lastname;<input type="text"  name="Lastname"/><br><br>
+          mobile num:<input type="number" name="mobile"/><br><br>
+          password:<input type="password" name="password"/><br><br>
+          confirm password:<input type="password" name="confirmpassword"/><br><br>
+          genter:<input type="radio" name="genter"/>male
+          <input type="radio" name="genter"/>female
+          <input type="radio" name="genter"/>other<br><br>
+          skills:<input type="checkbox" name="skills"/>html
+          <input type="checkbox" name="skils"/>css
+          <input type="checkbox" name="skills" />js<br><br>
+          dob:<input type="date" name="dob"/><br><br>
+          mail;<input type="mail" name="mail"/><br><br>
+          time:<input type="time" name="time"/><br> <br>       
+          address:<textarea cols="20" rows="5"></textarea><br><br>
+          state :<select id="register" name="state">
+                    <option >--select--</option>
+                    <option>tn</option>
+                    <option>kl</option>
+                    <option>mp</option>
+
+
+
+          </select> <br><br>
+          <input id="register" type="submit" value="register"/>
+          <input id="register" type="reset" value="cancel"/>
+          
+          <style>
+            #register{
+                          color:#ffffff;
+                        font-weight: 500;
+                        background-color: #2fb814;
+                        cursor:progress;
+                        border-radius: 5px;
+                        height: 32px;
+                        padding: 5px 40px;
+                        border: 5px solidgray;
+                   
+            }
+           </style>
+
+
+
+
+    </form>
+</body>
+</html>
